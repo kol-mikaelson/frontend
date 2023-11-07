@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap">
+    <style>
+        body {
+            background-image: url('https://wallpapers.com/images/featured-full/stock-market-pictures-pd5zksxr07t7a4xu.jpg');
+            background-color: #222;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .dashboard {
+            background-color: #0074cc;
+            border-radius: 15px;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .dashboard:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 116, 204, 0.8);
+        }
+
+        h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+            color: #fff;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .dashboard h2 {
+            font-size: 20px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .dashboard1 {
+            background-color: #ff5722;
+        }
+
+        .dashboard2 {
+            background-color: #4caf50;
+        }
+
+        .dashboard3 {
+            background-color: #ff9800;
+        }
+
+        .dashboard4 {
+            background-color: #673ab7;
+        }
+
+        .dashboard5 {
+            background-color: #e91e63;
+        }
+
+        .dashboard6 {
+            background-color: #2196F3;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="dashboard-title">Stock Prediction Dashboard</h1>
+    <p>Welcome to the Stock Prediction Dashboard. Explore the world of stock markets and make informed decisions with the following options:</p>
+    <p>Gain insights into stock prices, sales volume, daily returns, correlation analysis, risk assessment, and market predictions.</p>
+    <div class="container">
+        <a href="/close" class="dashboard dashboard1">
+            <h2>Closing Price</h2>
+        </a>
+        <a href="/vos" class="dashboard dashboard2">
+            <h2>Volume of Sales</h2>
+        </a>
+        <a href="/dr" class="dashboard dashboard3">
+            <h2>Daily Return</h2>
+        </a>
+        <a href="/scr" class="dashboard dashboard4">
+            <h2>Stock Co-Relation</h2>
+        </a>
+        <a href="/rti" class="dashboard dashboard5">
+            <h2>Risk to Invest</h2>
+        </a>
+        <a href="/smp" class="dashboard dashboard6">
+            <h2>Stock Market Prediction</h2>
+        </a>
+    </div>
+</body>
+</html>
